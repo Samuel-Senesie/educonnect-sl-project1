@@ -66,10 +66,16 @@ main {
 #cover-text {
     background-color: lightgreen;
     font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    align-content: center; 
 }
-.container {
-    height: 250px;
-    width: 250px;
+.about-you {
+    display: inline;
 }
 
 #parent {
@@ -78,32 +84,36 @@ main {
     background-color: antiquewhite;
     text-align: center;
     border-radius: 30px;
-    margin: 2em;
+    margin: 3em;
+    align-content: end;
 }
 
 #school-authority {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     text-align: center;
     background-color: antiquewhite;
     border-radius: 30px;
-    margin: 2em;
+    margin: 3em;
+    align-content: end;
 }
 
 #ministry {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: antiquewhite;
     text-align: center;
     border-radius: 30px;
-    margin: 2em;
+    margin: 3em;
+    align-content: end;
 }
 
 #police {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: antiquewhite;
     text-align: center;
     border-radius: 30px;
-    margin: 2em;
+    margin: 3em;
+    align-content: end;
 }
