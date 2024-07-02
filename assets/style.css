@@ -15,7 +15,7 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
-h1 {
+h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -35,18 +35,36 @@ header {
     align-items: baseline;
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
 
 /* Main Section*/
+main {
+    flex: 1 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
 #cover {
     /* background imaged copied from the sit https://staticsb.we.org/f/52095/400x400/ab2bfdb346/sierra-leone-school-room-45-interior.jpg*/
     height: 600px;
     width: 100%;
-    background: url("assets/images/sierra-leone-school-room-45-interior") no-repeat center center/cover;
+    background: url("../assets/images/sierra-leone-school-girl.jpg") no-repeat center center/cover;
     position: relative;
 }
 
 #cover-text {
-    background-color: rgba(241, 109, 107, .7);
+    background-color: lightgreen;
     font-size: 130%;
 }
 .container {
