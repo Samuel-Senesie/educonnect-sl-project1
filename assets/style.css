@@ -1,3 +1,30 @@
+/*Importing Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/*Asterisk wildecard selector to overide default styles added to the browser*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: red
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
+}
+/* Main Section*/
+#cover {
+    /* background imaged copied from the sit https://staticsb.we.org/f/52095/400x400/ab2bfdb346/sierra-leone-school-room-45-interior.jpg*/
+    height: 600px;
+    width: 100%;
+    background: url("assets/images/sierra-leone-school-room-45-interior") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
 }
