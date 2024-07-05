@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Meta tags for search engines-->
-    <meta name="description" content="Education monitoring. Free quality education. Parent-teacher communication platform in Sierra Leone">
-    <meta name="keywords" content="free quality school educatio, parent-teacher communication, Sierra Leone, education, school monitoring, education">
+    <meta name="description"
+        content="Education monitoring. Free quality education. Parent-teacher communication platform in Sierra Leone">
+    <meta name="keywords"
+        content="free quality school educatio, parent-teacher communication, Sierra Leone, education, school monitoring, education">
     <!--Title-->
     <title>EduConnect SL</title>
     <!--Favicon
@@ -17,10 +20,11 @@
     <!--Stylesheet-->
     <link rel="stylesheet" href="assets/style.css">
     <!--Past fontawsom cdn link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!--Header-->
     <header>
@@ -45,11 +49,11 @@
             </ul>
         </nav>
     </header>
-    
+
     <!--Main Section
     signup form-->
     <main>
-        <section>
+        <section id="signup">
             <form id="parents-signup-form" action="https://formdump.codeinstitute.net" method="POST">
                 <h2>Please Signup Here!</h2>
                 <br>
@@ -57,15 +61,12 @@
                 <div class="radio-buttons">
                     <div>
                         <label for="two-parents-household">Two Parents Household</label>
-                        <input type="radio" name="household_type" id="two-parents-household" value="two-parents-household" required checked>
+                        <input type="radio" name="household_type" id="two-parents-household"
+                            value="two-parents-household" required checked>
                     </div>
                     <div>
-                        <label for="single-mum">Singel Mum</label>
-                        <input type="radio" name="household_type" id="single-mum" value="single-mum" required> 
-                    </div>
-                    <div>
-                        <label for="single-dad">Singel Dad</label>
-                        <input type="radio" name="household_type" id="single-dad" value="single-dad" required>
+                        <label for="single-parent">Singel Parent</label>
+                        <input type="radio" name="household_type" id="single-mum" value="single-mum" required>
                     </div>
                     <div>
                         <label for="foster-home">Foster Home</label>
@@ -84,10 +85,10 @@
                 <input type="text" name="last_name" id="last-name" class="text-input" required>
                 <br>
                 <label for="nin">National Identification Number:</label>
-                <input type="text" name="nin" id="nin" class="nin" required>
+                <input type="text" name="nin" id="nin" class="text-input" required>
                 <br>
                 <label for="street-name">Street Name:</label>
-                <input type="text" name="street-name" id="street-name">
+                <input type="text" name="street-name" id="street-name" class="text-input">
                 <br>
                 <label for="House Number">House Number:</label>
                 <input type="text" name="house_number" id="House" class="text-input">
@@ -99,45 +100,75 @@
                 <input type="email" name="email_address" id="email" class="text-input" required>
                 <br>
                 <label for="password">Password:</label>
-                <input type="password" name="password" id="password" class="password" required>
+                <input type="password" name="password" id="password" class="text-input">
                 <br>
                 <label for="confirm-password">Confirm Password:</label>
-                <input type="password" name="confirm-password" id="confirm-password" class="confirm-password" required>
+                <input type="password" name="confirm-password" id="confirm-password" class="text-input">
+                <br>
+                <h2>Mother's Information</h2>
+                <br>
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                <br>
+                <label for="first-name">Middle Name (optional):</label>
+                <input type="text" name="middle_name" id="middle-name" class="text-input">
+                <br>
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
+                <br>
+                <label for="nin">National Identification Number:</label>
+                <input type="text" name="nin" id="nin" class="text-input" required>
+                <br>
+                <label for="street-name">Street Name:</label>
+                <input type="text" name="street-name" id="street-name" class="text-input">
+                <br>
+                <label for="House Number">House Number:</label>
+                <input type="text" name="house_number" id="house-number" class="text-input">
+                <br>
+                <label for="mobile-number">Mobile Number:</label>
+                <input type="text" name="mobile_number" id="mobile-number" class="text-input" required>
+                <br>
+                <label for="email-address">Email Address:</label>
+                <input type="email" name="email_address" id="email" class="text-input" aria-required="">
+                <br>
+                <h2>Child's Information</h2>
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                <br>
+                <label for="first-name">Middle Name (optional):</label>
+                <input type="text" name="middle_name" id="middle-name" class="text-input">
+                <br>
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
+                <br>
+                <label for="nin">National Identification Number:</label>
+                <input type="text" name="nin" id="nin" class="text-input" required>
+                <br>
+                <label for="school-name">School Name:</label>
+                <input type="text" name="school_name" id="school-name" class="text-input" required>
+                <br>
+                <label for="class">Class</label>
+                <input type="text" name="class" id="class" class="text-input" required>
+
+                <h2>Location</h2>
+                <label for="province">Province:</label>
+                <input type="text" name="province" id="province" class="text-input" required>
+                <label for="district">District:</label>
+                <input type="text" name="district" id="district" class="text-input" required>
+                <label for="town">Town:</label>
+                <input type="text" name="town" id="town" class="text-input" required>
+                <label for="chiefdom">Chiefdom:</label>
+                <input type="text" name="chiefdom" id="chiefdom" class="text-input" required>
+                <br>
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="term">I agree to the <a href="#">Terms and Conditions</a></label>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
             </form>
-        </section>
-        <br>
-
-        <section id="mothers-information">
-            <div>
-                <form id="parents-signup-form" action="https://formdump.codeinstitute.net" method="POST">
-                    <h2>Mother's Information</h2>
-                    <br>
-                    <label for="first-name">First Name:</label>
-                    <input type="text" name="first_name" id="first-name" class="text-input" required>
-                    <br>
-                    <label for="first-name">Middle Name (optional):</label>
-                    <input type="text" name="middle_name" id="middle-name" class="text-input">
-                    <br>
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" name="last_name" id="last-name" class="text-input" required>
-                    <br>
-                    <label for="nin">National Identification Number:</label>
-                    <input type="text" name="nin" id="nin" class="nin" required>
-                    <br>
-                    <label for="street-name">Street Name:</label>
-                    <input type="text" name="street-name" id="street-name">
-                    <br>
-                    <label for="House Number">House Number:</label>
-                    <input type="text" name="house_number" id="House" class="text-input">
-                    <br>
-                    <label for="mobile-number">Mobile Number:</label>
-                    <input type="text" name="mobile_number" id="mobile-number" class="text-input" required>
-                    <br>
-                    <label for="email-address">Email Address:</label>
-                    <input type="email" name="email_address" id="email" class="text-input" required>
-                </form>
-            </div>
-
         </section>
     </main>
 
@@ -145,6 +176,7 @@
     <footer>
         <p>All Rights Reserved</p>
     </footer>
-    
+
 </body>
+
 </html>
