@@ -83,9 +83,12 @@ main {
     width: 300px;
     background-color: antiquewhite;
     text-align: center;
-    border-radius: 150px;
+    border-radius: 0px;
     margin: 3em;
-    align-content: end;
+    align-content: center;
+    display: inline-block;
+    /* icon copied from the adress: https://www.google.com/url?sa=i&url=https%3A%2F%2Fthenounproject.com%2Ficon%2Fparents-250956%2F&psig=AOvVaw1cpc8tccerOJ0SgafIjlVU&ust=1720277074476000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCPiO5tORkIcDFQAAAAAdAAAAABAE*/
+    background: url("../assets/images/Family\ icon.png") no-repeat center center/cover;
 }
 
 #school-authority {
@@ -93,9 +96,11 @@ main {
     width: 300px;
     text-align: center;
     background-color: antiquewhite;
-    border-radius: 150px;
+    border-radius: 0px;
     margin: 3em;
     align-content: end;
+    display: inline-block;
+    align-content: center;
 }
 
 #ministry {
@@ -103,10 +108,12 @@ main {
     width: 300px;
     background-color: antiquewhite;
     text-align:justify;
-    border-radius: 150px;
+    align-content: center;
+    border-radius: 0px;
     margin: 3em;
     align-content: center;
     text-decoration: none;
+    display: inline-block;
 }
 
 #police {
@@ -114,16 +121,37 @@ main {
     width: 300px;
     background-color: antiquewhite;
     text-align: center;
-    border-radius: 150px;
+    border-radius: 0px;
     margin: 3em;
     align-content: center;
     text-decoration: none;
     position: relative;
+    display: inline-block;
+    background: url("../assets/images/police-icon.png") no-repeat center center/cover;
 }
+
+/* Signin Page*/
+#signin {
+    background-color: azure;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+#signin-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.4);
+    padding: 30px;
+}
+#signin-form > h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+
 
 /* Parents Signup Page*/
 #signup {
     background-color: azure;
+    background-position: 70%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
 }
@@ -159,14 +187,51 @@ main {
     padding: 15px 32px;
     font-size: 100%;
     background-color: #454b1b;
-    color: #ffffff;
+    color: #fafafa;
+}
+
+footer {
+    background-color: lightgray;
+    position: relative;
+    height: 100px;
+    margin-top: 100px;
+    clear: both;
+    text-align: center;
+
 }
 
 /* Media quesy for large or landscape phones (576 and up) */
 @media screen and (min-width: 576px) {
-    div {
+   #about-you> div {
         column-count: 2;
         column-gap: 0;
+    }
+    
+}
+
+/* Media query: tablets and larger (768 and up) */
+@media screen and (min-width) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #menu {
+        display: flex;
+    }
+    #menu > li {
+        padding-left: 1rem;
+    }
+    .nav-toggle-label {
+        display: none;
+    }
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
     }
     
 }
