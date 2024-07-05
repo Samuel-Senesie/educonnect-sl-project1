@@ -144,6 +144,29 @@
                 <label for="nin">National Identification Number:</label>
                 <input type="text" name="nin" id="nin" class="text-input" required>
                 <br>
+                <div class="radio-buttons">
+                    <div>
+                        <label for="pre-school">Pre-School</label>
+                        <input type="radio" name="educational_level" id="pre-school"
+                            value="pre-school" required checked>
+                    </div>
+                    <div>
+                        <label for="primary-school">Primary School</label>
+                        <input type="radio" name="educational_level" id="primary-school"
+                            value="primary-school" required>
+                    </div>
+                    <div>
+                        <label for="junior-school">Junior Secondary School (JSS)</label>
+                        <input type="radio" name="educational_level" id="junior-school"
+                            value="junior-school" required>
+                    </div>
+                    <div>
+                        <label for="senior-school">Senior Secondary School</label>
+                        <input type="radio" name="educational_level" id="senior-school"
+                            value="senior-school" required>
+                    </div>
+                </div>
+                <br>
                 <label for="school-name">School Name:</label>
                 <input type="text" name="school_name" id="school-name" class="text-input" required>
                 <br>
@@ -151,8 +174,16 @@
                 <input type="text" name="class" id="class" class="text-input" required>
 
                 <h2>Location</h2>
-                <label for="province">Province:</label>
-                <input type="text" name="province" id="province" class="text-input" required>
+                <label for="region">Region:</label>
+                <select name="region" id="region" required>
+                    <option value="">Select your region</option>
+                    <option value="WA">Western Area</option>
+                    <option value="NW">North-West Region</option>
+                    <option value="NR">Northern Region</option>
+                    <option value="SR">Southern Region</option>
+                    <option value="ER">Eastern Region</option>
+                </select>
+                <input type="text" name="region" id="region" class="text-input" required>
                 <label for="district">District:</label>
                 <input type="text" name="district" id="district" class="text-input" required>
                 <label for="town">Town:</label>
